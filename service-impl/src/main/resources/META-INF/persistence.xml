@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	xmlns="http://java.sun.com/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.0">
+	<persistence-unit name="ornitoJPA" transaction-type="JTA">
+		<!-- OPEN JPA -->
+		<!-- provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider-->
+		<!-- HIBERNATE -->
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<jta-data-source>osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=jdbc/ornitorricosDS)</jta-data-source>
+		<class>org.llaroqui.ornitorrinco.data.service.impl.model.Team</class>
+		<validation-mode>AUTO</validation-mode>
+		<properties>
+			<!-- JPA >
+			<property name="openjpa.jdbc.DBDictionary" value="hsql(SimulateLocking=true)"/>
+			<property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+			<property name="openjpa.Log" value="slf4j"/>
+			-->
+			<!-- Hibernate -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>			
+			<property name = "hibernate.show_sql" value = "true" />	
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			
+			
+			<!-- Externalizar -->
+			<!-- property name="hibernate.ejb.cfgfile" value="/hibernate.cfg.xml"/-->		
+		</properties>			
+	</persistence-unit>
+</persistence>
