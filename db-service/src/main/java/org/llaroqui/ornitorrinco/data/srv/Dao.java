@@ -1,4 +1,4 @@
-package org.llaroqui.ornitorrinco.data.service.impl;
+package org.llaroqui.ornitorrinco.data.srv;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

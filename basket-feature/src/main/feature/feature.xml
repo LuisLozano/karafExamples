@@ -26,6 +26,7 @@
 		<bundle>mvn:org.primefaces/primefaces/5.1</bundle>
 		<bundle>mvn:org.llaroqui.ornitorrinco.data/service-api/0.0.1</bundle>   
 		<bundle>mvn:org.llaroqui.ornitorrinco.data/service-impl/0.0.1</bundle>
+		<bundle>mvn:org.llaroqui.ornitorrinco.data/db-service/0.0.1</bundle>
 		
 		<!-- NO USADOS -->
 		<!-- bundle>mvn:org.llaroqui.ornitorrinco.cdi/servicecdi-api/0.0.1</bundle>   

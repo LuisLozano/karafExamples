@@ -9,12 +9,12 @@
 	<service ref="ornitodataservice"
 		interface="org.llaroqui.ornitorrinco.data.service.api.IDataService" />
 		
-	<bean id="ornitodataservice" class="org.llaroqui.ornitorrinco.data.service.impl.DataService">
+	<bean id="ornitodataservice" class="org.llaroqui.ornitorrinco.data.srv.DataService">
 		<property name="theDao" ref="dao"/>
 		<tx:transaction method="*" value="Required" />
 	</bean>
 	    	   
 	<bean id="dao"
-		class="org.llaroqui.ornitorrinco.data.service.impl.Dao">
+		class="org.llaroqui.ornitorrinco.data.srv.Dao">
 	</bean>					
 </blueprint>

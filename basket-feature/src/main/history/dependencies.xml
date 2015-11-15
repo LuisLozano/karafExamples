@@ -2,6 +2,7 @@
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.3.0" name="basket-feature-0.0.1-SNAPSHOT">
     <feature version="0.0.0">
         <bundle>mvn:org.hsqldb/hsqldb/2.3.1</bundle>
+        <bundle>mvn:org.llaroqui.ornitorrinco.data/db-service/0.0.1</bundle>
         <bundle>mvn:org.llaroqui.ornitorrinco.data/service-api/0.0.1</bundle>
         <bundle>mvn:org.llaroqui.ornitorrinco.data/service-impl/0.0.1</bundle>
         <bundle>mvn:org.primefaces/primefaces/5.1</bundle>
