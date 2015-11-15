@@ -1,4 +1,4 @@
-package org.llaroqui.ornitorrinco.data.service.impl;
+package org.llaroqui.ornitorrinco.data.srv;
 
 import org.llaroqui.ornitorrinco.data.service.api.IDataService;
 import org.llaroqui.ornitorrinco.data.service.api.ITeam;
